@@ -15,6 +15,8 @@ var BarType = localStorage["BarType"];
 var SwitchRepeater = localStorage["SwitchRepeater"];
 if ( SwitchRepeater == undefined ) SwitchRepeater = "pi2nos" ;
 
+// Test comment from Rolf
+
 
     var receivers = {
 
