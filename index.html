@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <title>PI2NOS of PI3UTR</title>
+    <meta name="application-name" content="PI2NOS RX" />
+    <meta name="description" content="Displays PI2NOS or PI3UTR receivers on a map" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <meta id="vp" name="viewport" content="user-scalable=no,width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="msapplication-TileColor" content="#010066" />
+    <meta name="msapplication-square70x70logo" content="content/icons/win8/icon-70.png" />
+    <meta name="msapplication-square150x150logo" content="content/icons/win8/icon-150.png" />
+    <meta name="msapplication-wide310x150logo" content="content/icons/win8/icon310x150.png" />
+    <meta name="msapplication-square310x310logo" content="content/icons/win8/icon-310.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/icons/ios/icon@2x.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/icons/ios/icon-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="content/icons/ios/icon@2x.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="content/icons/ios/icon-72.png" />
+    <link rel="apple-touch-startup-image" href="content/splash/ios/default.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="True" name="handheldFriendly" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="dynamic">
+        <div id="gmaps">
+            <div id="header">
+            </div>
+            <div id="map">
+            </div>
+        </div>
+        <canvas></canvas>
+        <div id="overlay">
+            <input type="button" value="PI2NOS" id="btSwitchRepeater" />
+            <input type="button" value="OUTWARDS" id="btCircleStyle" />
+            <input type="button" value="GOOGLE MAPS" id="btSwitchMap" />
+            <input type="button" value="TERAIN" id="btSwitchMapType" />
+            <input type="button" value="RESET" id="btResetView" />
+            <input type="button" value="BARS" id="btBarType" />
+        </div>
+    </div>
+</body>
+</html>

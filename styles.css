@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Helvetica", sans-serif;
+    overflow: hidden;
+    line-height: 1;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    overflow: hidden;
+}
+
+canvas, #dynamic {
+    width: 100%;
+    height: 100%;
+}
+
+#gmaps {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#gmaps #header {
+    width: 100%;
+    height: 10%;
+    display: none;
+}
+
+#gmaps #map {
+    width: 100%;
+    height: 100%;
+}
+
+#overlay input {
+    font-size: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 8000;
+}
+
+#overlay {
+    /*background-color:#010066;*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+html.mobile.portrait #overlay {
+    font-size: 175%;
+    top:1em;
+    left:1em;
+}
+
+html.mobile.landscape #overlay {
+    font-size: 125%;
+    top:1em;
+    left:1em;
+}
+
+body {
+    background-color: rgb(209, 211, 195);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input#btSwitchMapType {
+    display: none;
+}
